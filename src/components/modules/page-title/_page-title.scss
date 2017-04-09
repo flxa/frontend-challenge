@@ -1,0 +1,19 @@
+// Page Title
+//
+// H1 hero style page title
+//
+// .page-title
+//
+// Markup: page-title.twig
+//
+// Style guide: 6.3
+
+$chroma: add-colors('primary', (
+    page-title-text: #1276c8,
+));
+
+.page-title,
+%page-title {
+  color: color(page-title-text);
+  font-size: 2rem;
+}

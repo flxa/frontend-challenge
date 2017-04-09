@@ -1,0 +1,46 @@
+// Grid
+//
+// Base grid structure for pages
+//
+// .grid
+//
+// Markup: grid.twig
+//
+// Style guide: 4.1
+
+$chroma: add-colors('primary', (
+    demo-color: rgba(0, 116, 203, .2),
+));
+
+.grid,
+%grid {
+  display: flex;
+
+  &__two-thirds,
+  &__half,
+  &__one-third {
+    flex: 2;
+    width: 100%;
+    max-width: 66.666%;
+    margin-right: 1em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__half {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  &__one-third {
+    flex: 1;
+    max-width: 33.333%;
+  }
+}
+
+.grid--demo {
+  background: color(demo-color);
+  padding: 2em;
+}
