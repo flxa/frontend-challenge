@@ -1,0 +1,22 @@
+// Menu
+//
+// The main menu module displays menu links
+//
+// .menu
+//
+// Markup: menu.twig
+//
+// Style guide: 6.2
+
+$chroma: add-colors('primary', (
+    menu-bg:                #425467,
+    menu-text:              'white',
+));
+
+.menu,
+%menu {
+  background-color: color(menu-bg);
+  color: color(menu-text);
+  display: flex;
+  padding: 10px;
+}
